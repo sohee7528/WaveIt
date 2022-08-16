@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StoreLarge">
+    tools:context=".StoreMain">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="730dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -143,36 +146,44 @@
                         android:id="@+id/btn_all"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="21dp"
+                        android:layout_marginLeft="10dp"
                         android:background="@drawable/btn_all" />
-
-                    <TextView
-                        android:id="@+id/btn_large"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/btn_large_fill" />
-
-                    <TextView
-                        android:id="@+id/btn_medium"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/btn_medium" />
-
-                    <TextView
-                        android:id="@+id/btn_small"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:background="@drawable/btn_small" />
 
                     <TextView
                         android:id="@+id/btn_liner"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="6dp"
                         android:background="@drawable/btn_liner" />
+
+                    <TextView
+                        android:id="@+id/btn_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/btn_small" />
+
+                    <TextView
+                        android:id="@+id/btn_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/btn_medium" />
+
+                    <TextView
+                        android:id="@+id/btn_large_fill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/btn_large_fill" />
+
+                    <TextView
+                        android:id="@+id/btn_night"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/btn_night" />
+
                 </LinearLayout>
             </HorizontalScrollView>
 

@@ -287,7 +287,7 @@
                 app:expandOnClick="true"
                 app:inner_view="@layout/home_information1"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.333"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardview7"
                 app:startExpanded="false"
