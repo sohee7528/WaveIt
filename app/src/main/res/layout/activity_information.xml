@@ -311,7 +311,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardview8"
                 app:startExpanded="false"
-                app:title="여름철 발생하기 쉬운 질염, 생활 속 관리방법은?" />
+                app:title="질염, 생활 속 관리방법은?" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

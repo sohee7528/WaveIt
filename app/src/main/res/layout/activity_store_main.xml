@@ -8,22 +8,26 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_height="730dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/okay_body"
                 android:layout_width="60dp"
                 android:layout_height="20dp"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="20dp"
                 android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="47dp"
-                android:background="@drawable/okaybody">
-            </TextView>
+                android:background="@drawable/okaybody"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,60 +55,71 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
+                    android:background="@drawable/rectangle_search"
                     android:drawableStart="@drawable/search"
+                    android:drawablePadding="10dp"
                     android:hint="평소 궁금했던 상품이 있나요?"
                     android:paddingLeft="12dp"
-                    android:drawablePadding="10dp"
                     android:textColor="#B5B5B5"
                     android:textSize="12sp"
-                    android:background="@drawable/rectangle_search">
-                </EditText>
+                    tools:ignore="TouchTargetSizeCheck"></EditText>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="17dp">
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+
                 <ImageButton
                     android:id="@+id/pad"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="26dp"
                     android:background="@drawable/pad"
-                    android:layout_marginLeft="26dp" />
+                    tools:ignore="SpeakableTextPresentCheck" />
+
                 <ImageButton
                     android:id="@+id/tampon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/tampon"
-                    android:layout_marginLeft="20dp"/>
+                    tools:ignore="SpeakableTextPresentCheck" />
+
                 <ImageButton
                     android:id="@+id/cleanser"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/cleanser"
-                    android:layout_marginLeft="20dp"/>
+                    tools:ignore="SpeakableTextPresentCheck" />
+
                 <ImageButton
                     android:id="@+id/painkiller"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/painkiller"
-                    android:layout_marginLeft="20dp"/>
+                    tools:ignore="SpeakableTextPresentCheck" />
+
                 <ImageButton
                     android:id="@+id/pill"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/pill"
                     android:layout_marginLeft="17dp"
-                    android:layout_marginRight="20dp"/>
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/pill"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/rectangle65"
-                android:layout_marginTop="22dp"
                 android:layout_marginLeft="21dp"
-                android:layout_marginRight="21dp"/>
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="21dp"
+                android:background="@drawable/rectangle65" />
 
             <TextView
                 android:id="@+id/textView2"
@@ -115,22 +130,24 @@
                 android:text="생리대"
                 android:textColor="#292929"
                 android:textSize="16sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="15dp">
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/btn_all"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/btn_all_fill"
-                        android:layout_marginLeft="10dp"/>
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/btn_all_fill" />
 
                     <TextView
                         android:id="@+id/btn_liner"
@@ -143,26 +160,29 @@
                         android:id="@+id/btn_small"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/btn_small"
-                        android:layout_marginLeft="6dp"/>
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/btn_small" />
+
                     <TextView
                         android:id="@+id/btn_medium"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/btn_medium"
-                        android:layout_marginLeft="6dp"/>
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/btn_medium" />
+
                     <TextView
                         android:id="@+id/btn_large"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/btn_large"
-                        android:layout_marginLeft="6dp"/>
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/btn_large" />
+
                     <TextView
                         android:id="@+id/btn_night"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/btn_night"
-                        android:layout_marginLeft="6dp"/>
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/btn_night" />
 
                 </LinearLayout>
             </HorizontalScrollView>
@@ -170,57 +190,140 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="22dp">
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_recommend"/>
+                    android:background="@drawable/product_recommend"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best1"/>
+                    android:background="@drawable/product_best1"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="22dp">
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best2"/>
+                    android:background="@drawable/product_best2"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best3"/>
+                    android:background="@drawable/product_best3"
+                    tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:layout_marginTop="22dp">
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best4"/>
+                    android:background="@drawable/product_best4" />
+
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best5"/>
+                    android:background="@drawable/product_best5" />
             </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
 
+    <ImageView
+        android:id="@+id/bottom"
+        android:layout_width="430dp"
+        android:layout_height="59dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bottom" />
+
+    <ImageButton
+        android:id="@+id/whome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/whome"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/wreal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/wreal"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/wkeep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/wkeep"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/bproduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bproduct"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/wcompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/wcompany"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
