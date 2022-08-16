@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EBE0D8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="15dp"
+        android:text="여성은 질 분비물이 노란색으로 변하며 냄새가 나면서 소변 중 화끈거림,
+통증, 간지럼증 등의 증상이 나타나며 칸디다 질염에 감염되는 경우가 많다."
+        android:textSize="15sp" />
+
+</LinearLayout>

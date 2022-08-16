@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="230dp"
     android:gravity="top"
-    android:background="@drawable/home_1"
+    android:background="@drawable/home_3"
     android:orientation="vertical">
 
     <TextView

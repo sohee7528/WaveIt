@@ -3,9 +3,10 @@ package com.android.waveit;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
-
 import android.os.Bundle;
+import android.view.View;
 
+import com.alespero.expandablecardview.ExpandableCardView;
 import me.relex.circleindicator.CircleIndicator3;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,11 +16,21 @@ public class MainActivity extends AppCompatActivity {
     private int num_page = 3;
     private CircleIndicator3 mIndicator;
 
+    private ExpandableCardView expandableCardView1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //카드뷰
+        expandableCardView1 = findViewById(R.id.cardview1);
+        expandableCardView1.setOnExpandedListener(new ExpandableCardView.OnExpandedListener() {
+            @Override
+            public void onExpandChanged(View v, boolean isExpanded) {
+
+            }
+        });
         /**
          * 가로 슬라이드 뷰 Fragment
          */
