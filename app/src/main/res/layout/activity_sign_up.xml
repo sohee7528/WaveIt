@@ -121,7 +121,7 @@
         android:id="@+id/check1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravi="center_vertical"
+        android:layout_gravity="center_vertical"
         android:text="  (필수) 오케이바이 이용약관 동의"
         android:textColor="#7D7D7D"
         app:layout_constraintBottom_toTopOf="@+id/check2"
