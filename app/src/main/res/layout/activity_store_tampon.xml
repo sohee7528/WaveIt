@@ -63,8 +63,7 @@
                     android:hint="평소 궁금했던 상품이 있나요?"
                     android:paddingLeft="12dp"
                     android:textColor="#B5B5B5"
-                    android:textSize="12sp"
-                    tools:ignore="TouchTargetSizeCheck"></EditText>
+                    android:textSize="12sp"></EditText>
             </LinearLayout>
 
             <LinearLayout
@@ -78,32 +77,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="26dp"
-                    android:background="@drawable/pad"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:background="@drawable/pad" />
 
                 <ImageButton
                     android:id="@+id/tampon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/tampon"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:background="@drawable/tampon_select" />
 
                 <ImageButton
                     android:id="@+id/cleanser"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/cleanser"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:background="@drawable/cleanser" />
 
                 <ImageButton
                     android:id="@+id/painkiller"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/painkiller"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:background="@drawable/painkiller" />
 
                 <ImageButton
                     android:id="@+id/pill"
@@ -111,8 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="17dp"
                     android:layout_marginRight="20dp"
-                    android:background="@drawable/pill"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:background="@drawable/pill" />
             </LinearLayout>
 
             <ImageView
@@ -149,21 +143,21 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
-                        android:background="@drawable/btn_all_fill" />
+                        android:background="@drawable/btn_all_fill_green" />
 
                     <TextView
                         android:id="@+id/btn_legular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
-                        android:background="@drawable/btn_legular" />
+                        android:background="@drawable/btn_legular_green" />
 
                     <TextView
                         android:id="@+id/btn_super"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="6dp"
-                        android:background="@drawable/btn_super" />
+                        android:background="@drawable/btn_super_green" />
 
                 </LinearLayout>
             </HorizontalScrollView>
@@ -178,15 +172,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_recommend"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:background="@drawable/product_recommend" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best1"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:background="@drawable/product_best1" />
             </LinearLayout>
 
             <LinearLayout
@@ -199,15 +191,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best2"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:background="@drawable/product_best2" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best3"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:background="@drawable/product_best3" />
             </LinearLayout>
 
             <LinearLayout
