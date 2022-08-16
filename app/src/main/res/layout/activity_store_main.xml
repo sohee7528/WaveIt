@@ -14,16 +14,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-                <TextView
-                    android:id="@+id/okay_body"
-                    android:layout_width="60dp"
-                    android:layout_height="20dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_marginLeft="20dp"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="47dp"
-                    android:background="@drawable/okaybody">
-                </TextView>
+            <TextView
+                android:id="@+id/okay_body"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="47dp"
+                android:background="@drawable/okaybody">
+            </TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -116,42 +116,56 @@
                 android:textColor="#292929"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
-<HorizontalScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_marginTop="15dp">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btn_all_fill"
-                android:layout_marginLeft="21dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btn_large"
-                android:layout_marginLeft="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btn_medium"
-                android:layout_marginLeft="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btn_small"
-                android:layout_marginLeft="10dp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/btn_liner"
-                android:layout_marginLeft="10dp" />
-        </LinearLayout>
-</HorizontalScrollView>
+                    <TextView
+                        android:id="@+id/btn_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_all_fill"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/btn_liner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/btn_liner" />
+
+                    <TextView
+                        android:id="@+id/btn_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_small"
+                        android:layout_marginLeft="6dp"/>
+                    <TextView
+                        android:id="@+id/btn_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_medium"
+                        android:layout_marginLeft="6dp"/>
+                    <TextView
+                        android:id="@+id/btn_large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_large"
+                        android:layout_marginLeft="6dp"/>
+                    <TextView
+                        android:id="@+id/btn_night"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_night"
+                        android:layout_marginLeft="6dp"/>
+
+                </LinearLayout>
+            </HorizontalScrollView>
 
             <LinearLayout
                 android:layout_width="match_parent"
