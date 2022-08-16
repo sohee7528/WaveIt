@@ -28,7 +28,8 @@
         android:scaleType="fitCenter"
         android:src="@drawable/user_brown"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -41,7 +42,8 @@
         android:scaleType="fitCenter"
         android:src="@drawable/notice_brown"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 
     <androidx.core.widget.NestedScrollView
@@ -331,7 +333,7 @@
         app:srcCompat="@drawable/bottom" />
 
     <ImageButton
-        android:id="@+id/bhome"
+        android:id="@+id/whome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -340,10 +342,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/whome" />
+        app:srcCompat="@drawable/whome"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/wreal"
+        android:id="@+id/breal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -352,7 +355,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/breal" />
+        app:srcCompat="@drawable/breal"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/wkeep"
@@ -363,7 +367,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/wkeep" />
+        app:srcCompat="@drawable/wkeep"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/wproduct"
@@ -375,7 +380,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.705"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/wproduct" />
+        app:srcCompat="@drawable/wproduct"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/wcompany"
@@ -387,6 +393,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.915"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/wcompany" />
+        app:srcCompat="@drawable/wcompany"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

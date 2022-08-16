@@ -10,7 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WaveIt">
         <activity android:name=".ProductInformation"></activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".SignUp" />
         <activity android:name=".SignUp_complete" />
         <activity android:name=".SignUp_disease" />
@@ -21,14 +28,7 @@
         <activity android:name=".StoreLarge" />
         <activity android:name=".StoreTampon" />
         <activity
-            android:name=".StoreMain"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".StoreMain"/>
     </application>
 
 </manifest>
