@@ -17,7 +17,10 @@
         <activity android:name=".SignUp_pwd" />
         <activity android:name=".SignUp_sickness" />
         <activity android:name=".Information" />
-        <activity android:name=".Login"
+        <activity android:name=".Login" />
+        <activity android:name=".StoreLarge" />
+        <activity
+            android:name=".StoreMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,9 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StoreLarge" />
-        <activity
-            android:name=".StoreMain"/>
     </application>
 
 </manifest>

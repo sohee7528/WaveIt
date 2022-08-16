@@ -12,6 +12,8 @@ import android.widget.TextView;
 public class StoreMain extends AppCompatActivity {
 
     TextView btn_large;
+    ImageButton tampon;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +24,15 @@ public class StoreMain extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),StoreLarge.class);
+                startActivity(intent);
+            }
+        });
+
+        tampon = findViewById(R.id.tampon);
+        tampon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),StoreTampon.class);
                 startActivity(intent);
             }
         });
