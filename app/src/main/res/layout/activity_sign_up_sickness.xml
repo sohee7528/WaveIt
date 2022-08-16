@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F2EA"
+    tools:context=".Login">
+
+
+    <ImageButton
+        android:id="@+id/back4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="#F9F2EA"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <ImageView
+        android:id="@+id/Okayswu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="101dp"
+        android:src="@drawable/sickness"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/ScheckBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="없음"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ScheckBox2"
+        app:layout_constraintEnd_toStartOf="@+id/ScheckBox2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/ScheckBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="질염"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintEnd_toStartOf="@+id/ScheckBox3"
+        app:layout_constraintStart_toEndOf="@+id/ScheckBox1"
+        app:layout_constraintTop_toTopOf="@+id/ScheckBox3" />
+
+    <CheckBox
+        android:id="@+id/ScheckBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="월경과다증"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScheckBox4" />
+
+    <CheckBox
+        android:id="@+id/ScheckBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="독성쇼크\n증후군"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintStart_toEndOf="@+id/ScheckBox7"
+        app:layout_constraintTop_toTopOf="@+id/ScheckBox7" />
+
+    <CheckBox
+        android:id="@+id/ScheckBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="다낭성난소\n증후군"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ScheckBox2"
+        app:layout_constraintTop_toBottomOf="@+id/Okayswu" />
+
+    <CheckBox
+        android:id="@+id/ScheckBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="7dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="자궁경부암"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintEnd_toStartOf="@+id/ScheckBox6"
+        app:layout_constraintStart_toEndOf="@+id/ScheckBox4"
+        app:layout_constraintTop_toBottomOf="@+id/ScheckBox2" />
+
+    <CheckBox
+        android:id="@+id/ScheckBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="자궁내막증"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ScheckBox5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ScheckBox5" />
+
+    <CheckBox
+        android:id="@+id/ScheckBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="자궁근종"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ScheckBox5"
+        app:layout_constraintEnd_toStartOf="@+id/ScheckBox5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        android:text="추천을 원하지 않으시나요?"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/skip2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/skip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="26dp"
+        android:background="#00ff0000"
+        android:backgroundTint="#F9F2EA"
+        android:text="건너뛰기"
+        android:textColor="#85776D"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Next4"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/Next4"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:backgroundTint="#EBE0D8"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="다음"
+        android:textColor="#B5B5B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

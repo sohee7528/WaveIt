@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F2EA"
+    tools:context=".Login">
+
+
+    <ImageButton
+        android:id="@+id/back3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="#F9F2EA"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    <ImageView
+        android:id="@+id/Okayswu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="101dp"
+        android:src="@drawable/disease"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/DcheckBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="없음"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DcheckBox2"
+        app:layout_constraintEnd_toStartOf="@+id/DcheckBox2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/DcheckBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="가려움"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintBottom_toTopOf="@+id/DcheckBox5"
+        app:layout_constraintEnd_toStartOf="@+id/DcheckBox3"
+        app:layout_constraintStart_toEndOf="@+id/DcheckBox1" />
+
+    <CheckBox
+        android:id="@+id/DcheckBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="습진"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DcheckBox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/DcheckBox2" />
+
+    <CheckBox
+        android:id="@+id/DcheckBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="쓸림"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DcheckBox5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/DcheckBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="생리통 증가"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/DcheckBox6" />
+
+    <CheckBox
+        android:id="@+id/DcheckBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="267dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="생리주기\n변화"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintBottom_toBottomOf="@+id/skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back3" />
+
+    <CheckBox
+        android:id="@+id/DcheckBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="생리양 변화"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DcheckBox8"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/DcheckBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="피부 이상"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DcheckBox5" />
+
+    <CheckBox
+        android:id="@+id/DcheckBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:background="@drawable/checkbox"
+        android:button="@android:color/transparent"
+        android:text="부정 출혈"
+        android:textAlignment="center"
+        android:textColor="#7D7D7D"
+        app:layout_constraintBaseline_toBaselineOf="@+id/DcheckBox8"
+        app:layout_constraintStart_toEndOf="@+id/DcheckBox8" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_horizontal"
+        android:text="추천을 원하지 않으시나요?"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/skip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <Button
+        android:id="@+id/skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="26dp"
+        android:background="#00ff0000"
+        android:backgroundTint="#F9F2EA"
+        android:text="건너뛰기"
+        android:textColor="#85776D"
+        android:textSize="13dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Next3"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+
+    <Button
+        android:id="@+id/Next3"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:backgroundTint="#EBE0D8"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="다음"
+        android:textColor="#B5B5B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

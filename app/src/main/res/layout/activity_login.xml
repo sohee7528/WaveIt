@@ -11,11 +11,12 @@
         android:id="@+id/Okayswu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="68dp"
         android:src="@drawable/okaybody"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/EmailID"
+        app:layout_constraintStart_toEndOf="@+id/EmailID"
         app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -23,94 +24,89 @@
         android:id="@+id/EmailID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="17dp"
         android:text="이메일 아이디"
         android:textColor="#7D7D7D"
         app:layout_constraintBottom_toTopOf="@+id/EditEmail"
-        app:layout_constraintStart_toStartOf="@+id/EditEmail" />
+        app:layout_constraintStart_toStartOf="@+id/EditEmail"
+        app:layout_constraintTop_toBottomOf="@+id/Okayswu" />
 
 
     <!--모서리 둥글게 추가-->
+
     <EditText
         android:id="@+id/EditEmail"
         android:layout_width="0dp"
-        android:layout_height="58sp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="256dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="44dp"
         android:background="#EBE0D8"
         android:gravity="center_vertical"
-        android:hint="이메일을 입력해주세요"
+        android:hint="   이메일을 입력해주세요"
         android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/PWD"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/EmailID" />
 
     <TextView
         android:id="@+id/PWD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="13dp"
         android:text="비밀번호"
         android:textColor="#7D7D7D"
+        app:layout_constraintBottom_toTopOf="@+id/EditPWD"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/EditEmail" />
 
     <!--모서리 둥글게 추가-->
+
     <EditText
         android:id="@+id/EditPWD"
         android:layout_width="0dp"
-        android:layout_height="58sp"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginRight="36dp"
-        android:layout_marginBottom="26dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="19dp"
         android:background="#EBE0D8"
         android:gravity="center_vertical"
-        android:hint="영문, 숫자 포함 6자리 이상을 입력해주세요"
+        android:hint="   영문, 숫자 포함 6자리 이상을 입력해주세요"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/FindID"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/PWD"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintTop_toBottomOf="@+id/PWD" />
 
     <Button
         android:id="@+id/FindID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="134dp"
+        android:layout_marginBottom="53dp"
         android:background="#00ff0000"
         android:backgroundTint="#F9F2EA"
         android:gravity="center_horizontal"
         android:text="아이디/비밀번호 찾기"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/SignUp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditEmail"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintTop_toBottomOf="@+id/EditPWD" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="132dp"
-        android:layout_marginLeft="132dp"
-        android:layout_marginBottom="176dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="46dp"
         android:gravity="center_horizontal"
         android:text="아직 계정이 없으신가요?"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/SignUp"
+        app:layout_constraintStart_toStartOf="@+id/FindID" />
 
 
     <!--밑줄 추가하기-->
@@ -119,31 +115,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="552dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="85dp"
         android:background="#00ff0000"
         android:backgroundTint="#F9F2EA"
         android:text="빠르게 가입하기"
-        android:textStyle="bold"
         android:textColor="#85776D"
         android:textSize="13dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/LogIn"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/FindID" />
 
 
     <Button
         android:id="@+id/LogIn"
-        android:layout_width="match_parent"
-        android:layout_height="73dp"
-        android:layout_marginTop="664dp"
+        android:layout_width="392dp"
+        android:layout_height="66dp"
         android:backgroundTint="#EBE0D8"
         android:clickable="false"
+        android:gravity="center"
         android:text="로그인"
         android:textColor="#B5B5B5"
-        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/SignUp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
