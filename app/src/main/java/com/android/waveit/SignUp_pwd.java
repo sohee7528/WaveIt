@@ -31,14 +31,16 @@ public class SignUp_pwd extends AppCompatActivity {
         back2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUp_pwd.this, SignUp.class);
+                Intent intent = new Intent(getApplicationContext(), SignUp.class);
+                startActivity(intent);
             }
         });
 
         Next2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUp_pwd.this, SignUp_disease.class);
+                Intent intent = new Intent(getApplicationContext(), SignUp_disease.class);
+                startActivity(intent);
             }
         });
     }
