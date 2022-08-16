@@ -35,14 +35,6 @@ public class Login extends AppCompatActivity {
         EditEmail.addTextChangedListener(loginTextWatcher);
         EditPWD.addTextChangedListener(loginTextWatcher);
 
-
-        FindID.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -3,6 +3,7 @@ package com.android.waveit;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -55,7 +56,13 @@ public class SignUp_pwd extends AppCompatActivity {
 
         @Override
         public void afterTextChanged(Editable s) {
-
+            String PWD = sEditPWD.getText().toString().trim();
+            if (PWD.matches(pwRegex) && sEditPWD.length() > 5) {
+                Next2.setClickable(true);
+                Next2.setBackgroundColor(Color.parseColor("#85776D"));
+            }
         }
+
+        ;
     };
 }
