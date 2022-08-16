@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 
 public class SignUp_disease extends AppCompatActivity {
 
-    private ImageButton back3;
+    ImageButton back3;
     private CheckBox DcheckBox1;
     private CheckBox DcheckBox2;
     private CheckBox DcheckBox3;
@@ -24,8 +24,8 @@ public class SignUp_disease extends AppCompatActivity {
     private CheckBox DcheckBox7;
     private CheckBox DcheckBox8;
     private CheckBox DcheckBox9;
-    private Button skip;
-    private Button Next3;
+    Button skip;
+    Button Next3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,22 +47,25 @@ public class SignUp_disease extends AppCompatActivity {
 
         back3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SignUp_disease.this, SignUp_pwd.class);
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SignUp_pwd.class);
+                startActivity(intent);
             }
         });
 
         skip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUp_disease.this, SignUp_sickness.class);
+                Intent intent = new Intent(getApplicationContext(), SignUp_sickness.class);
+                startActivity(intent);
             }
         });
 
         Next3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUp_disease.this, SignUp_sickness.class);
+                Intent intent = new Intent(getApplicationContext(), SignUp_sickness.class);
+                startActivity(intent);
             }
         });
 

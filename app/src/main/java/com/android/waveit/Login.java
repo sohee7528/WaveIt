@@ -38,14 +38,16 @@ public class Login extends AppCompatActivity {
         SignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, com.android.waveit.SignUp.class);
+                Intent intent = new Intent(getApplicationContext(), com.android.waveit.SignUp.class);
+                startActivity(intent);
             }
         });
 
         LogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Login.this, com.android.waveit.MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), com.android.waveit.MainActivity.class);
+                startActivity(intent);
             }
         });
     }

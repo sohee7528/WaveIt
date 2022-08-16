@@ -46,21 +46,24 @@ public class SignUp_sickness extends AppCompatActivity {
         back4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUp_sickness.this, SignUp_disease.class);
+                Intent intent = new Intent(getApplicationContext(), SignUp_disease.class);
+                startActivity(intent);
             }
         });
 
         skip2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUp_sickness.this, SignUp_complete.class);
+                Intent intent = new Intent(getApplicationContext(), SignUp_complete.class);
+                startActivity(intent);
             }
         });
 
         Next4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SignUp_sickness.this, SignUp_complete.class);
+                Intent intent = new Intent(getApplicationContext(), SignUp_complete.class);
+                startActivity(intent);
             }
         });
 
