@@ -304,7 +304,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/reality1"
                 app:startExpanded="false"
-                app:title="PMS, 화학성분과 관련이 있다!" />
+                app:title="착하고 건강한 생리대를 고르고 싶다면?" />
 
             <com.alespero.expandablecardview.ExpandableCardView
                 android:id="@+id/cardview2"
@@ -322,7 +322,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardview1"
                 app:startExpanded="false"
-                app:title="여성의 75%가 칸디다 질염에?" />
+                app:title="질 건강엔 여성 유산균" />
 
             <com.alespero.expandablecardview.ExpandableCardView
                 android:id="@+id/cardview3"
@@ -342,7 +342,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardview2"
                 app:startExpanded="false"
-                app:title="생리컵의 정확한 사용법은?" />
+                app:title="탐폰과 생리대 비교하기" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
