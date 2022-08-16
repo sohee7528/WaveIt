@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".StoreMain">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,36 +25,188 @@
                     android:background="@drawable/okaybody">
                 </TextView>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-                         <SearchView
-                            android:id="@+id/rectangle_3"
-                            android:layout_width="335dp"
-                            android:layout_height="45dp"
-                            android:layout_alignParentLeft="true"
-                            android:layout_marginLeft="20dp"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginTop="92dp"
-                             android:background="@drawable/rectangle_search"> </SearchView>
-                             <TextView
-                                 android:id="@+id/some_id"
-                                 android:layout_width="147dp"
-                                 android:layout_height="17dp"
-                                 android:layout_alignParentLeft="true"
-                                 android:layout_alignParentTop="true"
-                                 android:layout_marginLeft="61dp"
-                                 android:layout_marginTop="106dp"
-                                 android:gravity="top"
-                                 android:text="평소 궁금했던 상품이 있나요?"
-                                 android:textColor="#B5B5B5"
-                                 android:textSize="12sp">
-                             </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                    </LinearLayout>
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="49dp"
+                    android:text="오늘의 오케이 제품"
+                    android:textColor="#292929"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/rectangle_3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/okay_body" />
+                />
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:drawableStart="@drawable/search"
+                    android:hint="평소 궁금했던 상품이 있나요?"
+                    android:paddingLeft="12dp"
+                    android:drawablePadding="10dp"
+                    android:textColor="#B5B5B5"
+                    android:textSize="12sp"
+                    android:background="@drawable/rectangle_search">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="17dp">
+                <ImageButton
+                    android:id="@+id/pad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pad"
+                    android:layout_marginLeft="26dp" />
+                <ImageButton
+                    android:id="@+id/tampon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/tampon"
+                    android:layout_marginLeft="20dp"/>
+                <ImageButton
+                    android:id="@+id/cleanser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cleanser"
+                    android:layout_marginLeft="20dp"/>
+                <ImageButton
+                    android:id="@+id/painkiller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/painkiller"
+                    android:layout_marginLeft="20dp"/>
+                <ImageButton
+                    android:id="@+id/pill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pill"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="20dp"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle65"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="21dp"
+                android:text="생리대"
+                android:textColor="#292929"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_all_fill"
+                android:layout_marginLeft="21dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_large"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_medium"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_small"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_liner"
+                android:layout_marginLeft="10dp" />
         </LinearLayout>
+</HorizontalScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:background="@drawable/product_recommend"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:background="@drawable/product_best1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:background="@drawable/product_best2"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:background="@drawable/product_best3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="22dp">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:background="@drawable/product_best4"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:background="@drawable/product_best5"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
     </ScrollView>
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
