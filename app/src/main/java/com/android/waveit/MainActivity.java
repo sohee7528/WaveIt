@@ -5,7 +5,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 import android.os.Bundle;
 import android.view.View;
-
 import com.alespero.expandablecardview.ExpandableCardView;
 import me.relex.circleindicator.CircleIndicator3;
 

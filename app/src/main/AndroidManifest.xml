@@ -9,8 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WaveIt">
-        <activity android:name=".SignUp"></activity>
+        <activity android:name=".ProductInformation"></activity>
         <activity android:name=".Login" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".SignUp_complete" />
+        <activity android:name=".SignUp_disease" />
+        <activity android:name=".SignUp_pwd" />
+        <activity android:name=".SignUp_sickness" />
+        <activity android:name=".Information" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
