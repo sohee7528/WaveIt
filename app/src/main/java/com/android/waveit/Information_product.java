@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 public class Information_product extends AppCompatActivity {
 
     ImageButton backbutton;
+    ImageButton tampon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +18,21 @@ public class Information_product extends AppCompatActivity {
         setContentView(R.layout.information_product);
 
         backbutton = findViewById(R.id.backbutton);
+        tampon=findViewById(R.id.tampon);
 
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),Information.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        tampon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Information_product1.class);
                 startActivity(intent);
                 finish();
             }
