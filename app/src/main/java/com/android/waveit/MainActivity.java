@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private ExpandableCardView expandableCardView3;
 
     ImageButton notice;
+    ImageButton user;
 
     ImageButton bhome;
     ImageButton wreal;
@@ -33,11 +34,25 @@ public class MainActivity extends AppCompatActivity {
     ImageButton wproduct;
     ImageButton wcompany;
 
+    Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //사실 전체보기
+        button=findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Information.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
         //알림
         notice=findViewById(R.id.notice);
@@ -47,7 +62,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),Notification.class);
                 startActivity(intent);
-                finish();
+            }
+        });
+
+        user=findViewById(R.id.user);
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),User.class);
+                startActivity(intent);
             }
         });
 
@@ -155,14 +178,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),Information.class);
                 startActivity(intent);
+                finish();
             }
         });
 
         wkeep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Information.class);
+                Intent intent=new Intent(getApplicationContext(),Keep.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -171,14 +196,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),StoreMain.class);
                 startActivity(intent);
+                finish();
             }
         });
 
         wcompany.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),StoreMain.class);
+                Intent intent=new Intent(getApplicationContext(),Company.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

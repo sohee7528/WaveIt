@@ -87,7 +87,7 @@ public class StoreMain extends AppCompatActivity {
         wkeep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Information.class);
+                Intent intent=new Intent(getApplicationContext(),Keep.class);
                 startActivity(intent);
             }
         });
@@ -104,7 +104,7 @@ public class StoreMain extends AppCompatActivity {
         wcompany.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),StoreMain.class);
+                Intent intent=new Intent(getApplicationContext(),Company.class);
                 startActivity(intent);
             }
         });

@@ -9,8 +9,7 @@
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -80,7 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:background="@drawable/real_disease1"
+                    android:background="@drawable/real_disease3"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
@@ -88,7 +87,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/real_disease2"
+                    android:background="@drawable/real_disease1"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
@@ -96,7 +95,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/real_disease3"
+                    android:background="@drawable/real_disease2"
                     tools:ignore="SpeakableTextPresentCheck" />
 
             </LinearLayout>
@@ -133,7 +132,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/view1"
                     app:startExpanded="false"
-                    app:title="생리대 부작용의 진실, 그것이 알고 싶다" />
+                    app:title="질염의 원인과 증상은?" />
 
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview2"
@@ -151,7 +150,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview1"
                     app:startExpanded="false"
-                    app:title="안전한 생리대는 어떤 것인가" />
+                    app:title="질염, 생활 속 관리방법은?" />
 
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview3"
@@ -169,7 +168,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview2"
                     app:startExpanded="false"
-                    app:title="‘가려움, 통증’ 생리대 탓일 수 있다" />
+                    app:title="소음순 비대증은 만성 질염의 원인" />
 
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview4"
@@ -187,7 +186,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview3"
                     app:startExpanded="false"
-                    app:title="착하고 건강한 생리대를 고르고 싶다면?" />
+                    app:title="질염을 예방하는 8가지 수칙" />
 
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview5"
@@ -205,7 +204,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview4"
                     app:startExpanded="false"
-                    app:title="물에 녹는 생리대" />
+                    app:title="질염은 성병? 질염에 대한 오해와 진실" />
 
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview6"
@@ -223,7 +222,8 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview5"
                     app:startExpanded="false"
-                    app:title="생리대, 어디까지 아시나요" />
+                    app:title="분비물 많으면 모두 질염일까?" />
+
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview7"
                     android:layout_width="350dp"
@@ -240,11 +240,28 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview6"
                     app:startExpanded="false"
-                    app:title="내게 맞는 유기농 생리대 고르는 법" />
+                    app:title="날씨가 춥다고 방심하면 안되는 질염" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/addbutton"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
         </LinearLayout>
+
 
     </ScrollView>
 

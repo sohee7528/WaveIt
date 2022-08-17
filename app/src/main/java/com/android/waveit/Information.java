@@ -34,6 +34,22 @@ public class Information extends AppCompatActivity {
         button1 = findViewById(R.id.button1);
 
 
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Information_product.class);
+                startActivity(intent);
+            }
+        });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Information_disease.class);
+                startActivity(intent);
+            }
+        });
+
         whome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +70,7 @@ public class Information extends AppCompatActivity {
         wkeep.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Information.class);
+                Intent intent=new Intent(getApplicationContext(),Keep.class);
                 startActivity(intent);
             }
         });
@@ -70,26 +86,11 @@ public class Information extends AppCompatActivity {
         wcompany.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),StoreMain.class);
+                Intent intent=new Intent(getApplicationContext(),Company.class);
                 startActivity(intent);
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Information_product.class);
-                startActivity(intent);
-            }
-        });
-
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Information_disease.class);
-                startActivity(intent);
-            }
-        });
 
     }
 }
