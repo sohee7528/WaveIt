@@ -19,7 +19,7 @@ public class Notification2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
 
-        back5_2 = findViewById(R.id.back5);
+        back5_2 = findViewById(R.id.back5_2);
 
 
         back5_2.setOnClickListener(new View.OnClickListener() {

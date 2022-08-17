@@ -2,6 +2,9 @@ package com.android.waveit;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -46,6 +49,12 @@ public class Notification extends AppCompatActivity {
             }
         });
 
+        noticegroup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                }
+        });
+
         takecontracetive1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,7 +64,5 @@ public class Notification extends AppCompatActivity {
                 leftnotification.setText("0개 알림 남음");
             }
         });
-
-
     }
 }
