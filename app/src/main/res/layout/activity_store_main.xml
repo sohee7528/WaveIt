@@ -67,7 +67,7 @@
                     android:paddingLeft="12dp"
                     android:textColor="#B5B5B5"
                     android:textSize="12sp"
-                    tools:ignore="TouchTargetSizeCheck"></EditText>
+                    tools:ignore="TouchTargetSizeCheck"/>
             </LinearLayout>
 
             <LinearLayout

@@ -51,20 +51,18 @@
                     app:layout_constraintTop_toBottomOf="@+id/okay_body" />
                 />
 
-                <EditText
-                    android:id="@+id/search"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="28dp"
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/okaybody_brown"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/rectangle_search"
-                    android:drawableStart="@drawable/search"
-                    android:drawablePadding="10dp"
-                    android:hint="평소 궁금했던 상품이 있나요?"
-                    android:paddingLeft="12dp"
-                    android:textColor="#B5B5B5"
-                    android:textSize="12sp"
-                    tools:ignore="TouchTargetSizeCheck"></EditText>
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/okaybody_brown"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
             </LinearLayout>
 
             <LinearLayout
