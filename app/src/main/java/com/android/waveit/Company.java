@@ -9,9 +9,15 @@ import android.widget.ImageButton;
 
 public class Company extends AppCompatActivity {
 
-    private ImageButton c_save;
-    private ImageButton c_justmyday;
-    private ImageButton c_happymoonday;
+    ImageButton c_save;
+    ImageButton c_justmyday;
+    ImageButton c_happymoonday;
+
+    ImageButton whome;
+    ImageButton wreal;
+    ImageButton wkeep;
+    ImageButton wproduct;
+    ImageButton bcompany;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,5 +51,58 @@ public class Company extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        whome=findViewById(R.id.whome);
+        wreal=findViewById(R.id.wreal);
+        wkeep=findViewById(R.id.wkeep);
+        wproduct=findViewById(R.id.wproduct);
+        bcompany=findViewById(R.id.bcompany);
+
+        whome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        wreal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Information.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        wkeep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Keep.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        wproduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),StoreMain.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        bcompany.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Company.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 }

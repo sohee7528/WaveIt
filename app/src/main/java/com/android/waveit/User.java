@@ -18,8 +18,7 @@ public class User extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user);
 
-        backbtn=findViewById(R.id.backbutton);
-
+        backbtn=findViewById(R.id.backbtn);
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,7 +28,6 @@ public class User extends AppCompatActivity {
         });
 
         cpoff=findViewById(R.id.change_pad_off);
-
         cpoff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -7,30 +7,31 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Alarm extends AppCompatActivity {
+public class Alarm2 extends AppCompatActivity {
 
     ImageButton backbtn;
-    ImageButton time;
+    ImageButton good;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_alarm);
+        setContentView(R.layout.activity_alarm2);
 
         backbtn=findViewById(R.id.backbtn);
         backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),User.class);
+                startActivity(intent);
                 finish();
             }
         });
 
-        time=findViewById(R.id.time);
-        time.setOnClickListener(new View.OnClickListener() {
+        good=findViewById(R.id.good);
+        good.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Alarm1.class);
+                Intent intent=new Intent(getApplicationContext(),User2.class);
                 startActivity(intent);
                 finish();
             }

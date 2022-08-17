@@ -56,7 +56,7 @@ public class SignUp_disease extends AppCompatActivity {
         skip1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SignUp_sickness.class);
+                Intent intent = new Intent(getApplicationContext(), SignUp_complete.class);
                 startActivity(intent);
             }
         });

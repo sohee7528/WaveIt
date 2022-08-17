@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 
 public class SignUp_sickness extends AppCompatActivity {
 
-    private ImageButton back_4;
+    ImageButton back_4;
     private CheckBox ScheckBox1;
     private CheckBox ScheckBox2;
     private CheckBox ScheckBox3;
@@ -48,7 +48,7 @@ public class SignUp_sickness extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SignUp_disease.class);
-                startActivity(intent);
+                finish();
             }
         });
 
