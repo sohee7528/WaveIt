@@ -43,13 +43,15 @@
 
         <LinearLayout
             android:layout_width="350dp"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
             <ImageButton
                 android:id="@+id/c_save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="75dp"
+                android:layout_marginRight="17dp"
                 android:background="@drawable/c_save"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -64,7 +66,7 @@
                 android:id="@+id/c_justmyday"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="75dp"
+                android:layout_marginRight="55dp"
                 android:background="@drawable/c_justmyday" />
         </LinearLayout>
     </HorizontalScrollView>
