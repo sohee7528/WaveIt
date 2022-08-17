@@ -17,7 +17,7 @@ public class SignUp_pwd extends AppCompatActivity {
     private ImageButton back2;
     private EditText sEditPWD;
     private Button Next2;
-    private String pwRegex = "^[a-zA-Z0-9]*$";
+    private String pwRegex = "/[a-zA-Z0-9]/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +64,5 @@ public class SignUp_pwd extends AppCompatActivity {
                 Next2.setBackgroundColor(Color.parseColor("#85776D"));
             }
         }
-
-        ;
     };
 }

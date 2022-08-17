@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 public class Notification extends AppCompatActivity {
 
+    AlertDialog.Builder builder;
     private ImageButton back5;
     private TextView leftnotification;
     private ImageButton noticegroup;
@@ -49,11 +50,6 @@ public class Notification extends AppCompatActivity {
             }
         });
 
-        noticegroup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                }
-        });
 
         takecontracetive1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,5 +60,25 @@ public class Notification extends AppCompatActivity {
                 leftnotification.setText("0개 알림 남음");
             }
         });
+
+        noticegroup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showDialog();
+            }
+        });
+    }
+
+    public void showDialog() {
+        final String[] notices = new String[] {"전체알림", "피임약", "생리대", "탐폰"};
+        builder = new AlertDialog.Builder(Notification.this);
+        builder.setTitle("보고 싶은 알림을 선택하세요");
+        builder.setItems(
+                notices, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                }
+        );
     }
 }
