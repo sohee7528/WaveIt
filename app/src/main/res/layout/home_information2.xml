@@ -6,11 +6,10 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="150dp"
         android:gravity="center_vertical"
         android:padding="15dp"
-        android:text="여성은 질 분비물이 노란색으로 변하며 냄새가 나면서 소변 중 화끈거림,
-통증, 간지럼증 등의 증상이 나타나며 칸디다 질염에 감염되는 경우가 많다."
+        android:text="4년간 조사 끝에 '일회용 생리대 사용이 외음부의 가려움증·통증 등 생리 관련 증상 발생에 유의미한 영향을 미칠 수 있다'는 결과를 통해 그동안 여성들이 월경 기간 동안 겪었던   증상에 일회용 생리대가 영향을 미쳐왔다는 사실이 확인되었다. "
         android:textColor="#000000"
         android:textSize="15sp" />
 

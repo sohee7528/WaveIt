@@ -4,15 +4,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/okay"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/okay_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WaveIt">
         <activity android:name=".Company"/>
         <activity android:name=".company_save"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".MainActivity"/>
+        <activity android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login"/>
         <activity android:name=".SignUp" />
         <activity android:name=".SignUp_complete" />
         <activity android:name=".SignUp_disease" />
@@ -31,9 +31,13 @@
         <activity android:name=".Information_product1" />
         <activity android:name=".Information_disease" />
         <activity android:name=".Keep" />
+        <activity android:name=".Keep2"/>
         <activity android:name=".StoreMain" />
         <activity android:name=".StoreLarge" />
         <activity android:name=".StoreTampon" />
+        <activity android:name=".StoreDetailMain"/>
+        <activity android:name=".StoreDetailMain2"/>
+        <activity android:name=".StoreJudge"/>
         <activity android:name=".eatcomplete" />
         <activity android:name=".Notification" />
         <activity android:name=".User" />

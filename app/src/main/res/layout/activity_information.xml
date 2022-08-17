@@ -134,7 +134,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardview1"
                 app:startExpanded="false"
-                app:title="여성의 75%가 칸디다 질염에?" />
+                app:title="생리대 부작용의 진실" />
 
             <com.alespero.expandablecardview.ExpandableCardView
                 android:id="@+id/cardview3"
@@ -238,7 +238,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardview4"
                 app:startExpanded="false"
-                app:title="여성의 75%가 칸디다 질염에?" />
+                app:title="안전한 생리대는 어떤 것인가" />
 
             <com.alespero.expandablecardview.ExpandableCardView
                 android:id="@+id/cardview6"

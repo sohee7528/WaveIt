@@ -337,7 +337,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/view2"
                 app:startExpanded="false"
-                app:title="착하고 건강한 생리대를 고르고 싶다면?" />
+                app:title="여성의 75%가 칸디다 질염에?" />
 
             <com.alespero.expandablecardview.ExpandableCardView
                 android:id="@+id/cardview2"
