@@ -234,7 +234,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="85dp"
                             android:layout_marginTop="5dp"
-                            android:background="@drawable/mark" />
+                            android:background="@drawable/mark"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
                     </LinearLayout>
 
                     <TextView
@@ -298,7 +299,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="85dp"
                             android:layout_marginTop="5dp"
-                            android:background="@drawable/mark" />
+                            android:background="@drawable/mark"
+                            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck" />
                     </LinearLayout>
 
                     <TextView
