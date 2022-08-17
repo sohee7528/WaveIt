@@ -6,4 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".Company">
 
+
+    <TextView
+        android:id="@+id/okay_body"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/okaybody_brown"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="667dp"
+        android:background="@drawable/textcompany"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/okay_body" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

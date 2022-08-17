@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 
 public class SignUp_sickness extends AppCompatActivity {
 
-    private ImageButton back4;
+    private ImageButton back_4;
     private CheckBox ScheckBox1;
     private CheckBox ScheckBox2;
     private CheckBox ScheckBox3;
@@ -28,10 +28,11 @@ public class SignUp_sickness extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up_disease);
 
-        back4 = findViewById(R.id.back4);
+        back_4 = findViewById(R.id.back_4);
         ScheckBox1 = findViewById(R.id.ScheckBox1);
         ScheckBox2 = findViewById(R.id.ScheckBox2);
         ScheckBox3 = findViewById(R.id.ScheckBox3);
@@ -43,12 +44,11 @@ public class SignUp_sickness extends AppCompatActivity {
         skip2 = findViewById(R.id.skip2);
         Next4 = findViewById(R.id.Next4);
 
-        back4.setOnClickListener(new View.OnClickListener() {
+        back_4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SignUp_disease.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -59,8 +59,6 @@ public class SignUp_sickness extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
 
         Next4.addTextChangedListener(new TextWatcher() {
             @Override
