@@ -11,8 +11,7 @@
         android:theme="@style/Theme.WaveIt">
         <activity android:name=".Company"/>
         <activity android:name=".company_save"/>
-        <activity
-            android:name=".MainActivity"
+        <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,9 +30,13 @@
         <activity android:name=".Information_product1" />
         <activity android:name=".Information_disease" />
         <activity android:name=".Keep" />
+        <activity android:name=".Keep2"/>
         <activity android:name=".StoreMain" />
         <activity android:name=".StoreLarge" />
         <activity android:name=".StoreTampon" />
+        <activity android:name=".StoreDetailMain"/>
+        <activity android:name=".StoreDetailMain2"/>
+        <activity android:name=".StoreJudge"/>
         <activity android:name=".eatcomplete" />
         <activity android:name=".Notification" />
         <activity android:name=".User" />
