@@ -6,51 +6,83 @@
     android:layout_height="match_parent"
     tools:context=".StoreJudge">
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="730dp"
         android:layout_marginBottom="16dp"
         android:layout_weight="1"
-        android:background="#F1E7DF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="평가하기"
-            android:layout_marginTop="60dp"
-            android:layout_marginLeft="30dp"
-            android:textStyle="bold"
-            android:textColor="@color/basic"
-            android:textSize="18dp"/>
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="사용 후 기준으로 답변해주세요 :)"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="30dp"
-            android:textColor="#7D7D7D"
-            android:textSize="12dp"/>
-
-        <ImageView
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#F1E7DF">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/rectangle244"/>
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="평가하기"
+                android:textSize="18sp"
+                android:textColor="@color/basic"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="6dp"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용 후 기준으로 답변해주세요 :)"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#7D7D7D"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="16dp"/>
 
+            <ImageButton
+                android:id="@+id/question1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/question1"/>
 
+            <ImageButton
+                android:id="@+id/question2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/question2"/>
+            <ImageButton
+                android:id="@+id/question3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/question3"/>
+            <ImageButton
+                android:id="@+id/question4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/question4"/>
+            <ImageButton
+                android:id="@+id/question5"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/question5"/>
+            <ImageButton
+                android:id="@+id/question6"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/question6"/>
+            <ImageButton
+                android:id="@+id/complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/complete"/>
 
-
-
-
-
-
-
+        </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
