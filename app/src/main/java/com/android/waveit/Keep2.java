@@ -21,10 +21,13 @@ public class Keep2 extends AppCompatActivity {
     ImageButton okay_product;
     ImageButton okay_company_brown;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_keep2);
+
+
 
         okay_product=findViewById(R.id.okay_product);
         okay_company_brown = findViewById(R.id.okay_company_brown);

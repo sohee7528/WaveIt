@@ -147,7 +147,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/saib"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -178,7 +178,7 @@
                 android:src="@drawable/kcompany3"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+                app:layout_constraintTop_toBottomOf="@+id/saib"
                 tools:ignore="SpeakableTextPresentCheck" />
 
 
