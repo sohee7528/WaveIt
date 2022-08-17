@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class StoreLarge extends AppCompatActivity {
 
     TextView btn_all;
+    ImageButton tampon;
 
     ImageButton whome;
     ImageButton wreal;
@@ -27,6 +28,15 @@ public class StoreLarge extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),StoreMain.class);
+                startActivity(intent);
+            }
+        });
+
+        tampon = findViewById(R.id.tampon);
+        tampon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),StoreTampon.class);
                 startActivity(intent);
             }
         });

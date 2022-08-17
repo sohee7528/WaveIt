@@ -41,6 +41,9 @@
         <activity android:name=".StoreLarge" />
         <activity android:name=".StoreTampon" />
         <activity android:name=".StoreMain" />
+        <activity android:name=".Notification" />
+        <activity android:name=".Notification2" />
+        <activity android:name=".eatcomplete" />
     </application>
 
 </manifest>

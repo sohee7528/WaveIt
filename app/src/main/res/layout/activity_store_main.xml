@@ -21,18 +21,15 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/okaybody_brown"
-                android:layout_width="70dp"
-                android:layout_height="40dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:paddingLeft="10dp"
-                android:paddingTop="10dp"
-                android:scaleType="fitCenter"
-                android:src="@drawable/okaybody_brown"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/okay_body"
+                android:layout_width="60dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="47dp"
+                android:background="@drawable/okaybody_brown"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -67,7 +64,7 @@
                     android:paddingLeft="12dp"
                     android:textColor="#B5B5B5"
                     android:textSize="12sp"
-                    tools:ignore="TouchTargetSizeCheck"/>
+                    tools:ignore="TouchTargetSizeCheck"></EditText>
             </LinearLayout>
 
             <LinearLayout
@@ -80,7 +77,7 @@
                     android:id="@+id/pad"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="33dp"
                     android:background="@drawable/pad_select"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -88,7 +85,7 @@
                     android:id="@+id/tampon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="21dp"
                     android:background="@drawable/tampon"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -96,7 +93,7 @@
                     android:id="@+id/cleanser"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="21dp"
                     android:background="@drawable/cleanser"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -104,7 +101,7 @@
                     android:id="@+id/painkiller"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="21dp"
                     android:background="@drawable/painkiller"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -112,7 +109,8 @@
                     android:id="@+id/pill"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="20dp"
                     android:background="@drawable/pill"
                     tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
@@ -147,10 +145,10 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/btn_all_fill"
+                        android:id="@+id/btn_all"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="30dp"
                         android:background="@drawable/btn_all_fill" />
 
                     <TextView
@@ -191,26 +189,9 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="22dp"
-                android:orientation="horizontal">
 
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_recommend"
-                    tools:ignore="SpeakableTextPresentCheck" />
 
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:background="@drawable/product_best1"
-                    tools:ignore="SpeakableTextPresentCheck" />
-            </LinearLayout>
+            <!--추천-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -218,20 +199,378 @@
                 android:layout_marginTop="22dp"
                 android:orientation="horizontal">
 
-                <ImageButton
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best2"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/pad1"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/recommend"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"/>
 
-                <ImageButton
+                        <ImageButton
+                            android:id="@+id/mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[라엘] 유기농 순면 커버"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14p / 7,400원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+
+                <!--첫 번째 줄-->
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:background="@drawable/product_best3"
-                    tools:ignore="SpeakableTextPresentCheck" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--best1-->
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/pad1"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/recommend"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <ImageButton
+                            android:id="@+id/mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[라엘] 유기농 순면 커버"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14p / 7,400원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
             </LinearLayout>
+
+
+
+            <!--두 번째 줄-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+                <!--best2 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/pad1"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/recommend"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <ImageButton
+                            android:id="@+id/mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[라엘] 유기농 순면 커버"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14p / 7,400원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+
+                <!--best3-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/pad1"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/recommend"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <ImageButton
+                            android:id="@+id/mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[라엘] 유기농 순면 커버"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14p / 7,400원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--세 번째 줄-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+                <!--best4 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/pad1"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/recommend"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <ImageButton
+                            android:id="@+id/mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[라엘] 유기농 순면 커버"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14p / 7,400원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+
+                <!--best5-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/pad1"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/recommend"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <ImageButton
+                            android:id="@+id/mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[라엘] 유기농 순면 커버"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14p / 7,400원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--네 번째 줄-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -239,18 +578,128 @@
                 android:layout_marginTop="22dp"
                 android:orientation="horizontal">
 
-                <ImageButton
+                <!--그냥 제품 -->
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best4" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/pad1"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/recommend"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"/>
 
-                <ImageButton
+                        <ImageButton
+                            android:id="@+id/mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[라엘] 유기농 순면 커버"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14p / 7,400원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+
+                <!--그냥 제품-->
+
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:background="@drawable/product_best5" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/pad1"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/recommend"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"/>
+
+                        <ImageButton
+                            android:id="@+id/mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[라엘] 유기농 순면 커버"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14p / 7,400원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
             </LinearLayout>
+
+            <!--끝-->
+
+
 
         </LinearLayout>
 
