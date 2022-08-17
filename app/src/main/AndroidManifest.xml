@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WaveIt">
-        <activity
-            android:name=".Company"/>
+        <activity android:name=".Company"/>
+        <activity android:name=".company_save"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
