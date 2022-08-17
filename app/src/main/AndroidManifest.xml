@@ -9,15 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WaveIt">
-        <activity
-            android:name=".Keep"
-            android:exported="false" />
-        <activity
-            android:name=".User"
-            android:exported="false" />
-        <activity
-            android:name=".Information_disease"
-            android:exported="false" />
+
+
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -26,20 +19,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".Login" />
         <activity android:name=".SignUp" />
         <activity android:name=".SignUp_complete" />
         <activity android:name=".SignUp_disease" />
         <activity android:name=".SignUp_pwd" />
         <activity android:name=".SignUp_sickness" />
+
         <activity android:name=".Information" />
-        <activity android:name=".Login" />
+        <activity android:name=".Information_product"/>
+        <activity android:name=".Information_product1"/>
+        <activity android:name=".Information_disease"/>
+
+        <activity android:name=".Keep"/>
+
+        <activity android:name=".StoreMain"/>
         <activity android:name=".StoreLarge" />
         <activity android:name=".StoreTampon" />
+
         <activity android:name=".eatcomplete"/>
         <activity android:name=".Notification"/>
         <activity android:name=".Notification2"/>
-        <activity
-            android:name=".StoreMain"/>
+
+        <activity android:name=".User"/>
+
     </application>
 
 </manifest>
