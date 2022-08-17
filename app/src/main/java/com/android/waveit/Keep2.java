@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Keep extends AppCompatActivity {
+public class Keep2 extends AppCompatActivity {
 
     ImageButton notice;
     ImageButton user;
@@ -18,18 +18,18 @@ public class Keep extends AppCompatActivity {
     ImageButton wproduct;
     ImageButton wcompany;
 
-    ImageButton okay_product_brown;
-    ImageButton okay_company;
+    ImageButton okay_product;
+    ImageButton okay_company_brown;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_keep);
+        setContentView(R.layout.activity_keep2);
 
-        okay_product_brown=findViewById(R.id.okay_product_brown);
-        okay_company = findViewById(R.id.okay_company);
+        okay_product=findViewById(R.id.okay_product);
+        okay_company_brown = findViewById(R.id.okay_company_brown);
 
-        okay_product_brown.setOnClickListener(new View.OnClickListener() {
+        okay_product.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),Keep.class);
@@ -38,7 +38,7 @@ public class Keep extends AppCompatActivity {
             }
         });
 
-        okay_company.setOnClickListener(new View.OnClickListener() {
+        okay_company_brown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),Keep2.class);

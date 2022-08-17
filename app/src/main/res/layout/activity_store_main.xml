@@ -20,16 +20,40 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/okay_body"
+                    android:layout_width="60dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/okaybody_brown"/>
 
-            <TextView
-                android:id="@+id/okay_body"
-                android:layout_width="60dp"
-                android:layout_height="20dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="47dp"
-                android:background="@drawable/okaybody_brown"></TextView>
+                <ImageView
+                    android:id="@+id/notice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="240dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/notice_brown"/>
+
+                <ImageView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/user_brown"/>
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -64,7 +88,7 @@
                     android:paddingLeft="12dp"
                     android:textColor="#B5B5B5"
                     android:textSize="12sp"
-                    tools:ignore="TouchTargetSizeCheck"></EditText>
+                    tools:ignore="TouchTargetSizeCheck"/>
             </LinearLayout>
 
             <LinearLayout

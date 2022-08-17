@@ -8,7 +8,7 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="190dp"
         android:layout_gravity="top"
         app:layout_constraintBottom_toTopOf="@+id/nestedScrollView"
@@ -338,7 +338,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/view2"
                 app:startExpanded="false"
-                app:title="         건강한 생리대를 고르고 싶다면?" />
+                app:title="착하고 건강한 생리대를 고르고 싶다면?" />
 
             <com.alespero.expandablecardview.ExpandableCardView
                 android:id="@+id/cardview2"
@@ -353,7 +353,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardview1"
                 app:startExpanded="false"
-                app:title="         질 건강엔 여성 유산균" />
+                app:title="질 건강엔 여성 유산균" />
 
             <com.alespero.expandablecardview.ExpandableCardView
                 android:id="@+id/cardview3"
@@ -370,18 +370,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cardview2"
                 app:startExpanded="false"
-                app:title="         탐폰과 생리대 비교하기" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="#00FFFFFF"
-                android:src="@drawable/mark"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/cardview1"
-                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+                app:title="탐폰과 생리대 비교하기" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
