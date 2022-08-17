@@ -6,4 +6,246 @@
     android:layout_height="match_parent"
     tools:context=".Information_disease">
 
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#00FFFFFF"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/backbutton"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="알아야 하는 여성 질환"
+                    android:textColor="#292929"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/rectangle_3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/okay_body" />
+                />
+
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rectangle_search"
+                    android:drawableStart="@drawable/search"
+                    android:drawablePadding="10dp"
+                    android:hint="왜 질염에 자주 걸리는걸까?"
+                    android:paddingLeft="12dp"
+                    android:textColor="#B5B5B5"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/pad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/real_disease1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/tampon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/real_disease2"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/cleanser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/real_disease3"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="456dp"
+                android:orientation="vertical">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="370dp"
+                    android:layout_height="420dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/round"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/cardview1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="#EBE0D8"
+                    app:cardCornerRadius="10dp"
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/home_information1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/view1"
+                    app:startExpanded="false"
+                    app:title="생리대 부작용의 진실, 그것이 알고 싶다" />
+
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/cardview2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="#EBE0D8"
+                    app:cardCornerRadius="10dp"
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/home_information1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardview1"
+                    app:startExpanded="false"
+                    app:title="안전한 생리대는 어떤 것인가" />
+
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/cardview3"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="#EBE0D8"
+                    app:cardCornerRadius="10dp"
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/home_information1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardview2"
+                    app:startExpanded="false"
+                    app:title="‘가려움, 통증’ 생리대 탓일 수 있다" />
+
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/cardview4"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="#EBE0D8"
+                    app:cardCornerRadius="10dp"
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/home_information1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardview3"
+                    app:startExpanded="false"
+                    app:title="착하고 건강한 생리대를 고르고 싶다면?" />
+
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/cardview5"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="#EBE0D8"
+                    app:cardCornerRadius="10dp"
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/home_information1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardview4"
+                    app:startExpanded="false"
+                    app:title="물에 녹는 생리대" />
+
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/cardview6"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="#EBE0D8"
+                    app:cardCornerRadius="10dp"
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/home_information1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardview5"
+                    app:startExpanded="false"
+                    app:title="생리대, 어디까지 아시나요" />
+                <com.alespero.expandablecardview.ExpandableCardView
+                    android:id="@+id/cardview7"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    app:cardBackgroundColor="#EBE0D8"
+                    app:cardCornerRadius="10dp"
+                    app:expandOnClick="true"
+                    app:inner_view="@layout/home_information1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardview6"
+                    app:startExpanded="false"
+                    app:title="내게 맞는 유기농 생리대 고르는 법" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
