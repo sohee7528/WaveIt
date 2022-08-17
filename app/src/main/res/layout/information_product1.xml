@@ -80,7 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
-                    android:background="@drawable/pad_select"
+                    android:background="@drawable/pad"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton
@@ -88,7 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:background="@drawable/tampon"
+                    android:background="@drawable/tampon_select"
                     tools:ignore="SpeakableTextPresentCheck" />
 
                 <ImageButton

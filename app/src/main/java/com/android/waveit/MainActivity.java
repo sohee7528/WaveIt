@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private ExpandableCardView expandableCardView2;
     private ExpandableCardView expandableCardView3;
 
+    ImageButton notice;
+
     ImageButton bhome;
     ImageButton wreal;
     ImageButton wkeep;
@@ -37,6 +39,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //알림
+        notice=findViewById(R.id.notice);
+
+        notice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Notification.class);
+                startActivity(intent);
+            }
+        });
 
         //카드뷰
         expandableCardView1 = findViewById(R.id.cardview1);

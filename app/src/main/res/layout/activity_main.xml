@@ -48,7 +48,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -62,6 +62,7 @@
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
+        android:id="@+id/notice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -69,8 +70,8 @@
         android:background="#00FFFFFF"
         android:paddingTop="15dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/notice"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        android:src="@drawable/notice_on"
+        app:layout_constraintEnd_toStartOf="@+id/user"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 

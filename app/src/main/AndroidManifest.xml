@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WaveIt">
         <activity
+            android:name=".Keep"
+            android:exported="false" />
+        <activity
+            android:name=".User"
+            android:exported="false" />
+        <activity
+            android:name=".Information_disease"
+            android:exported="false" />
+        <activity
             android:name=".Information_product1"
             android:exported="false" />
         <activity

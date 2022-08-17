@@ -86,7 +86,7 @@ public class Information extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getApplicationContext(),Information_product1.class);
+                Intent intent=new Intent(getApplicationContext(),Information_disease.class);
                 startActivity(intent);
             }
         });
