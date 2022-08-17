@@ -8,40 +8,53 @@
     tools:context=".eatcomplete">
 
 
+    <ImageButton
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="#00ff0000"
+        android:src="@drawable/x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
     <TextView
         android:id="@+id/no1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="357dp"
-        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="37dp"
         android:text="오늘의 첫번째"
         android:textColor="#85776D"
         android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/eatmed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/eatmed"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/eatmed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="79dp"
+        android:layout_marginBottom="80dp"
         android:text="피임약 복용하기"
         android:textColor="#85776D"
         android:textSize="22dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btncomplete"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/no1" />
 
     <Button
         android:id="@+id/btncomplete"
-        android:layout_width="133dp"
+        android:layout_width="199dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="198dp"
+        android:layout_marginBottom="212dp"
         android:backgroundTint="#85776D"
         android:text="복용 완료"
         android:textSize="15dp"
