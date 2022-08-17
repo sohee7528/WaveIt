@@ -7,11 +7,30 @@
     android:background="@drawable/home_2"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[EVENT] 5주년 해피문데이 썸머파티!"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="30dp"/>
+
+
+    </LinearLayout>
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:gravity="bottom|left"
-        android:text="2"
-        android:textSize="50dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="런칭 5주년 시원한 혜택 ~08.21\n행운의 쿠폰부터 40% 할인까지"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="30dp"/>
 
 </LinearLayout>

@@ -7,11 +7,37 @@
     android:background="@drawable/home_1"
     android:orientation="vertical">
 
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:gravity="bottom|left"
-        android:text="1"
-        android:textSize="50dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[New] 오케이 회사 입점"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/company"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="여성을 위해 만든 브랜드 세이브(SAIB)는\n필수적인 성분만 남긴 안전한 제품을 만듭니다."
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="30dp"/>
+
 
 </LinearLayout>
