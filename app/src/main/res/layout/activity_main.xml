@@ -36,8 +36,10 @@
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/okaybody_white"
-        android:layout_width="80dp"
+        android:layout_width="70dp"
         android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
         android:paddingLeft="15dp"
         android:paddingTop="15dp"
         android:scaleType="fitCenter"
@@ -72,12 +74,14 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
+
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
         android:layout_width="0dp"
         android:layout_height="500dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/frameLayout">
 
@@ -95,7 +99,7 @@
                 android:text="오케이슈님, 이런 제품은 어떤가요?"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#000000"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/recommend1"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -110,7 +114,7 @@
                 android:layout_marginStart="20dp"
                 android:text="오케이슈님만을 위한 생리대를 추천드려요!"
                 android:textColor="#7D7D7D"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recommend" />
 
@@ -185,12 +189,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-black"
                 android:text="유해성분이 일으키는 문제들"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#000000"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/problem1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -203,7 +207,7 @@
                 android:layout_marginStart="20dp"
                 android:text="몸에 해로운 유해성분, 잘 알면 피할 수 있어요!!"
                 android:textColor="#7D7D7D"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/problem" />
 
@@ -272,12 +276,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="sans-serif-black"
                 android:text="우리가 알아야 할 사실들"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#000000"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/reality1"
                 app:layout_constraintStart_toStartOf="parent"
@@ -290,17 +294,27 @@
                 android:layout_marginStart="20dp"
                 android:text="어렵더라도 내 몸을 위해 알아보는 건 어떨까요?"
                 android:textColor="#7D7D7D"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/reality" />
 
+            <View
+                android:id="@+id/view2"
+                android:layout_width="370dp"
+                android:layout_height="185dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/round"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reality1" />
 
             <com.alespero.expandablecardview.ExpandableCardView
                 android:id="@+id/cardview1"
                 android:layout_width="350dp"
-                android:layout_height="70dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="20dp"
                 app:expandOnClick="true"
                 app:inner_view="@layout/home_information1"
@@ -316,7 +330,7 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
                 app:cardBackgroundColor="#EBE0D8"
                 app:cardCornerRadius="10dp"
@@ -334,9 +348,9 @@
                 android:layout_width="350dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="20dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="40dp"
                 app:cardBackgroundColor="#EBE0D8"
                 app:cardCornerRadius="10dp"
                 app:expandOnClick="true"
@@ -350,12 +364,10 @@
                 app:title="탐폰과 생리대 비교하기" />
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout
-         >
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.core.widget.NestedScrollView>
-
 
     <ImageView
         android:id="@+id/bottom"
