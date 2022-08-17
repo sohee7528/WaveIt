@@ -11,6 +11,7 @@ public class StoreDetailMain2 extends AppCompatActivity {
 
    ImageButton recommand;
    ImageButton arrow;
+   ImageButton judge;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,15 @@ public class StoreDetailMain2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getApplicationContext(),StoreMain.class);
+                startActivity(intent);
+            }
+        });
+
+        judge = findViewById(R.id.judge);
+        judge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),StoreJudge.class);
                 startActivity(intent);
             }
         });
