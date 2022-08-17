@@ -8,7 +8,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="730dp"
+        android:layout_height="670dp"
         android:layout_marginBottom="16dp"
         android:layout_weight="1"
         app:layout_constraintBottom_toTopOf="@+id/bottom"
@@ -29,7 +29,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="47dp"
-                android:background="@drawable/okaybody"></TextView>
+                android:background="@drawable/okaybody_brown"></TextView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,8 +40,8 @@
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="49dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="34dp"
                     android:text="오늘의 오케이 제품"
                     android:textColor="#292929"
                     android:textSize="16sp"
@@ -55,7 +55,7 @@
                     android:id="@+id/search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="28dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/rectangle_search"
                     android:drawableStart="@drawable/search"
@@ -76,35 +76,35 @@
                     android:id="@+id/pad"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="26dp"
+                    android:layout_marginLeft="33dp"
                     android:background="@drawable/pad" />
 
                 <ImageButton
                     android:id="@+id/tampon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="21dp"
                     android:background="@drawable/tampon_select" />
 
                 <ImageButton
                     android:id="@+id/cleanser"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="21dp"
                     android:background="@drawable/cleanser" />
 
                 <ImageButton
                     android:id="@+id/painkiller"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="21dp"
                     android:background="@drawable/painkiller" />
 
                 <ImageButton
                     android:id="@+id/pill"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="17dp"
+                    android:layout_marginLeft="21dp"
                     android:layout_marginRight="20dp"
                     android:background="@drawable/pill" />
             </LinearLayout>
@@ -121,7 +121,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="30dp"
                 android:layout_marginTop="21dp"
                 android:text="탐폰"
                 android:textColor="#292929"
@@ -142,21 +142,21 @@
                         android:id="@+id/btn_all"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="30dp"
                         android:background="@drawable/btn_all_fill_green" />
 
                     <TextView
                         android:id="@+id/btn_legular"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginLeft="12dp"
                         android:background="@drawable/btn_legular_green" />
 
                     <TextView
                         android:id="@+id/btn_super"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
+                        android:layout_marginLeft="12dp"
                         android:background="@drawable/btn_super_green" />
 
                 </LinearLayout>
@@ -177,7 +177,7 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="23dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@drawable/product_best1" />
             </LinearLayout>
 
@@ -196,7 +196,7 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="23dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@drawable/product_best3" />
             </LinearLayout>
 
@@ -215,7 +215,7 @@
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="23dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@drawable/product_best5" />
             </LinearLayout>
 

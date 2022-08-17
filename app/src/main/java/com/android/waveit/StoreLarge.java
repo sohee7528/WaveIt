@@ -31,6 +31,7 @@ public class StoreLarge extends AppCompatActivity {
             }
         });
 
+
         whome=findViewById(R.id.whome);
         wreal=findViewById(R.id.wreal);
         wkeep=findViewById(R.id.wkeep);
