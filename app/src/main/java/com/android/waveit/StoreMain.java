@@ -22,6 +22,7 @@ public class StoreMain extends AppCompatActivity {
     ImageButton wkeep;
     ImageButton bproduct;
     ImageButton wcompany;
+    ImageButton rael;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,17 @@ public class StoreMain extends AppCompatActivity {
             }
         });
 
+        rael = findViewById(R.id.rael);
+        rael.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),StoreDetailMain.class);
+                startActivity(intent);
+            }
+        });
+
+
+
         mark1 = findViewById(R.id.mark1);
         mark1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -61,6 +73,8 @@ public class StoreMain extends AppCompatActivity {
                 mark2.setImageResource(R.drawable.mark_fill);
             }
         });
+
+
 
         whome=findViewById(R.id.whome);
         wreal=findViewById(R.id.wreal);

@@ -13,6 +13,8 @@ public class StoreLarge extends AppCompatActivity {
     TextView btn_all;
     ImageButton tampon;
 
+    ImageButton rael;
+
     ImageButton whome;
     ImageButton wreal;
     ImageButton wkeep;
@@ -40,6 +42,17 @@ public class StoreLarge extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+        rael = findViewById(R.id.rael);
+        rael.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(),StoreDetailMain.class);
+                startActivity(intent);
+            }
+        });
+
 
 
         whome=findViewById(R.id.whome);

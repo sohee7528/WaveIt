@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoreDetailMain2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/arrow"
+                android:layout_width="7dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/arrow"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[라엘] 유기농 순면커버 생리대"
+                android:textSize="18sp"
+                android:textColor="@color/basic"
+                android:textStyle="bold"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:background="@drawable/detail1"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:background="@drawable/component"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="9dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rectangle65"
+                android:backgroundTint="#F8F8F8"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/recommand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/detail_recommand_w"/>
+
+                <ImageButton
+                    android:id="@+id/norecommand"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/detail_recommand_b"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/rectangle65"
+                android:backgroundTint="#F8F8F8"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/detail_norecommand_bottom"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/judge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/judge"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/buy"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
