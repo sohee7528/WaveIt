@@ -87,12 +87,12 @@ public class SignUp extends AppCompatActivity {
     private TextWatcher Next1TextWatcher = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
+            Next1.setClickable(false);
         }
 
         @Override
         public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+            Next1.setClickable(false);
         }
 
         //이메일이 emailvalidation에 맞고 닉네임이 1자 이상이면 Next1 버튼 활성화, 색 바뀜
@@ -103,6 +103,7 @@ public class SignUp extends AppCompatActivity {
             if (email.matches(emailValidation) && EditNname.length()>0 && allcheck.isChecked()){
                 Next1.setClickable(true);
                 Next1.setBackgroundColor(Color.parseColor("#85776D"));
+                Next1.setTextColor(Color.parseColor("#ffffff"));
             }
 
         }

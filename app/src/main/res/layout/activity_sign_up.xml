@@ -142,8 +142,8 @@
 
     <Button
         android:id="@+id/Next1"
-        android:layout_width="413dp"
-        android:layout_height="0dp"
+        android:layout_width="411dp"
+        android:layout_height="76dp"
         android:backgroundTint="#EBE0D8"
         android:clickable="false"
         android:gravity="center"

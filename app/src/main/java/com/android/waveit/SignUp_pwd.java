@@ -59,7 +59,7 @@ public class SignUp_pwd extends AppCompatActivity {
         @Override
         public void afterTextChanged(Editable s) {
             String PWD = sEditPWD.getText().toString().trim();
-            if (PWD.matches(pwRegex) && sEditPWD.length() > 5) {
+            if (PWD.matches(pwRegex) && PWD.length() > 5) {
                 Next2.setClickable(true);
                 Next2.setBackgroundColor(Color.parseColor("#85776D"));
             }

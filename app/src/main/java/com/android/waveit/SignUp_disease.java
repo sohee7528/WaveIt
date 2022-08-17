@@ -24,7 +24,7 @@ public class SignUp_disease extends AppCompatActivity {
     private CheckBox DcheckBox7;
     private CheckBox DcheckBox8;
     private CheckBox DcheckBox9;
-    Button skip;
+    Button skip1;
     Button Next3;
 
     @Override
@@ -42,7 +42,7 @@ public class SignUp_disease extends AppCompatActivity {
         DcheckBox7 = findViewById(R.id.DcheckBox7);
         DcheckBox8 = findViewById(R.id.DcheckBox8);
         DcheckBox9 = findViewById(R.id.DcheckBox9);
-        skip = findViewById(R.id.skip);
+        skip1 = findViewById(R.id.skip1);
         Next3 = findViewById(R.id.Next3);
 
         back3.setOnClickListener(new View.OnClickListener() {
@@ -53,11 +53,34 @@ public class SignUp_disease extends AppCompatActivity {
             }
         });
 
-        skip.setOnClickListener(new View.OnClickListener() {
+        skip1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SignUp_sickness.class);
                 startActivity(intent);
+            }
+        });
+
+
+
+        Next3.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                Next3.setClickable(false);
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                Next3.setClickable(false);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (DcheckBox1.isChecked() || DcheckBox2.isChecked() || DcheckBox3.isChecked() || DcheckBox4.isChecked() || DcheckBox5.isChecked() || DcheckBox6.isChecked() || DcheckBox7.isChecked() || DcheckBox8.isChecked() || DcheckBox9.isChecked()) {
+                    Next3.setClickable(true);
+                    Next3.setBackgroundColor(Color.parseColor("#85776D"));
+                    Next3.setTextColor(Color.parseColor("#ffffff"));
+                }
             }
         });
 
@@ -66,26 +89,6 @@ public class SignUp_disease extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SignUp_sickness.class);
                 startActivity(intent);
-            }
-        });
-
-        Next3.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                if (DcheckBox1.isChecked() || DcheckBox2.isChecked() || DcheckBox3.isChecked() || DcheckBox4.isChecked() || DcheckBox5.isChecked() || DcheckBox6.isChecked() || DcheckBox7.isChecked() || DcheckBox8.isChecked() || DcheckBox9.isChecked()) {
-                    Next3.setClickable(true);
-                    Next3.setBackgroundColor(Color.parseColor("#85776D"));
-                }
             }
         });
     }

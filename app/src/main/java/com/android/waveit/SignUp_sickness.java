@@ -48,6 +48,7 @@ public class SignUp_sickness extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), SignUp_disease.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -59,23 +60,17 @@ public class SignUp_sickness extends AppCompatActivity {
             }
         });
 
-        Next4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SignUp_complete.class);
-                startActivity(intent);
-            }
-        });
+
 
         Next4.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
+                Next4.setClickable(false);
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+                Next4.setClickable(false);
             }
 
             @Override
@@ -83,7 +78,16 @@ public class SignUp_sickness extends AppCompatActivity {
                 if (ScheckBox1.isChecked() || ScheckBox2.isChecked() || ScheckBox3.isChecked() || ScheckBox4.isChecked() || ScheckBox5.isChecked() || ScheckBox6.isChecked() || ScheckBox7.isChecked() || ScheckBox8.isChecked()) {
                     Next4.setClickable(true);
                     Next4.setBackgroundColor(Color.parseColor("#85776D"));
+                    Next4.setTextColor(Color.parseColor("#ffffff"));
                 }
+            }
+        });
+
+        Next4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SignUp_complete.class);
+                startActivity(intent);
             }
         });
     }
