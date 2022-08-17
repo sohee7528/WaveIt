@@ -76,36 +76,35 @@
                     android:id="@+id/pad"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="33dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@drawable/pad" />
 
                 <ImageButton
                     android:id="@+id/tampon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="21dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/tampon_select" />
 
                 <ImageButton
                     android:id="@+id/cleanser"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="21dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/cleanser" />
 
                 <ImageButton
                     android:id="@+id/painkiller"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="21dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/painkiller" />
 
                 <ImageButton
                     android:id="@+id/pill"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="21dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/pill" />
             </LinearLayout>
 
@@ -142,7 +141,7 @@
                         android:id="@+id/btn_all"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="30dp"
+                        android:layout_marginLeft="25dp"
                         android:background="@drawable/btn_all_fill_green" />
 
                     <TextView

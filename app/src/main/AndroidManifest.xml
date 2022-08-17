@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WaveIt">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".Information_product1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,11 +27,11 @@
         <activity android:name=".SignUp_pwd" />
         <activity android:name=".SignUp_sickness" />
         <activity android:name=".Information" />
+        <activity android:name=".Information_product" />
         <activity android:name=".Login" />
         <activity android:name=".StoreLarge" />
         <activity android:name=".StoreTampon" />
-        <activity
-            android:name=".StoreMain"/>
+        <activity android:name=".StoreMain" />
     </application>
 
 </manifest>
