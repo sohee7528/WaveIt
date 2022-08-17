@@ -22,11 +22,11 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/okaybody_white"
+                android:id="@+id/okaybody_brown"
                 android:layout_width="70dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
                 android:scaleType="fitCenter"
@@ -67,7 +67,7 @@
                     android:paddingLeft="12dp"
                     android:textColor="#B5B5B5"
                     android:textSize="12sp"
-                    tools:ignore="TouchTargetSizeCheck"></EditText>
+                    tools:ignore="TouchTargetSizeCheck"/>
             </LinearLayout>
 
             <LinearLayout
@@ -80,7 +80,7 @@
                     android:id="@+id/pad"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="33dp"
+                    android:layout_marginLeft="30dp"
                     android:background="@drawable/pad_select"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -88,7 +88,7 @@
                     android:id="@+id/tampon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="21dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/tampon"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -96,7 +96,7 @@
                     android:id="@+id/cleanser"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="21dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/cleanser"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -104,7 +104,7 @@
                     android:id="@+id/painkiller"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="21dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/painkiller"
                     tools:ignore="SpeakableTextPresentCheck" />
 
@@ -112,8 +112,7 @@
                     android:id="@+id/pill"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="21dp"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
                     android:background="@drawable/pill"
                     tools:ignore="SpeakableTextPresentCheck" />
             </LinearLayout>
@@ -151,7 +150,7 @@
                         android:id="@+id/btn_all_fill"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginLeft="25dp"
                         android:background="@drawable/btn_all_fill" />
 
                     <TextView

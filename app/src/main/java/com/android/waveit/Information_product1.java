@@ -7,14 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Information_product extends AppCompatActivity {
+public class Information_product1 extends AppCompatActivity {
 
     ImageButton backbutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.information_product);
+        setContentView(R.layout.information_product1);
 
         backbutton = findViewById(R.id.backbutton);
 

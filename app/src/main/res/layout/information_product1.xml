@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Information_product">
+    tools:context=".Information_product1">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -32,89 +32,89 @@
                 android:src="@drawable/backbutton"
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="30dp"
-                android:text="다양한 여성 용품"
-                android:textColor="#292929"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/rectangle_3"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/okay_body" />
-            />
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="다양한 여성 용품"
+                    android:textColor="#292929"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/rectangle_3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/okay_body" />
+                />
 
-            <EditText
-                android:id="@+id/search"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/rectangle_search"
-                android:drawableStart="@drawable/search"
-                android:drawablePadding="10dp"
-                android:hint="피임약은 어떻게 복용하면 될까?"
-                android:paddingLeft="12dp"
-                android:textColor="#B5B5B5"
-                android:textSize="12sp"
-                tools:ignore="TouchTargetSizeCheck"/>
+                <EditText
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rectangle_search"
+                    android:drawableStart="@drawable/search"
+                    android:drawablePadding="10dp"
+                    android:hint="피임약은 어떻게 복용하면 될까?"
+                    android:paddingLeft="12dp"
+                    android:textColor="#B5B5B5"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck"/>
 
-        </LinearLayout>
+            </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="17dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="17dp"
+                android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/pad"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:background="@drawable/pad_select"
-                tools:ignore="SpeakableTextPresentCheck" />
+                <ImageButton
+                    android:id="@+id/pad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/pad_select"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
-            <ImageButton
-                android:id="@+id/tampon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/tampon"
-                tools:ignore="SpeakableTextPresentCheck" />
+                <ImageButton
+                    android:id="@+id/tampon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/tampon"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
-            <ImageButton
-                android:id="@+id/cleanser"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/cleanser"
-                tools:ignore="SpeakableTextPresentCheck" />
+                <ImageButton
+                    android:id="@+id/cleanser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/cleanser"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
-            <ImageButton
-                android:id="@+id/painkiller"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/painkiller"
-                tools:ignore="SpeakableTextPresentCheck" />
+                <ImageButton
+                    android:id="@+id/painkiller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/painkiller"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
-            <ImageButton
-                android:id="@+id/pill"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/pill"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </LinearLayout>
+                <ImageButton
+                    android:id="@+id/pill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/pill"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -148,7 +148,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@id/view1"
                     app:startExpanded="false"
-                    app:title="생리대 부작용의 진실, 그것이 알고 싶다" />
+                    app:title="탐폰을 처음 사용한다면" />
 
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview2"
@@ -166,7 +166,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview1"
                     app:startExpanded="false"
-                    app:title="안전한 생리대는 어떤 것인가" />
+                    app:title="탐폰을 사용하면 쇼크가 온다?" />
 
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview3"
@@ -184,7 +184,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview2"
                     app:startExpanded="false"
-                    app:title="‘가려움, 통증’ 생리대 탓일 수 있다" />
+                    app:title="탐폰 부작용에 관한 모든 것" />
 
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview4"
@@ -202,7 +202,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview3"
                     app:startExpanded="false"
-                    app:title="착하고 건강한 생리대를 고르고 싶다면?" />
+                    app:title="탐폰은 어떤 제품인가" />
 
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview5"
@@ -220,7 +220,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview4"
                     app:startExpanded="false"
-                    app:title="물에 녹는 생리대" />
+                    app:title="지켜야 할 탐폰 최대 사용 시간" />
 
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview6"
@@ -238,7 +238,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview5"
                     app:startExpanded="false"
-                    app:title="생리대, 어디까지 아시나요" />
+                    app:title="탐폰과 생리대 비교하기" />
                 <com.alespero.expandablecardview.ExpandableCardView
                     android:id="@+id/cardview7"
                     android:layout_width="350dp"
@@ -255,11 +255,12 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/cardview6"
                     app:startExpanded="false"
-                    app:title="내게 맞는 유기농 생리대 고르는 법" />
+                    app:title="탐폰 사용 현황과 시장 변화" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
 
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

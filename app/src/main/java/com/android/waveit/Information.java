@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 public class Information extends AppCompatActivity {
@@ -14,6 +15,9 @@ public class Information extends AppCompatActivity {
     ImageButton wkeep;
     ImageButton wproduct;
     ImageButton wcompany;
+
+    Button button;
+    Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,10 @@ public class Information extends AppCompatActivity {
         wkeep=findViewById(R.id.wkeep);
         wproduct=findViewById(R.id.wproduct);
         wcompany=findViewById(R.id.wcompany);
+
+        button = findViewById(R.id.button);
+        button1 = findViewById(R.id.button1);
+
 
         whome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +71,22 @@ public class Information extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),StoreMain.class);
+                startActivity(intent);
+            }
+        });
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Information_product.class);
+                startActivity(intent);
+            }
+        });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(),Information_product1.class);
                 startActivity(intent);
             }
         });
