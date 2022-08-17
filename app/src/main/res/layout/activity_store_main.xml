@@ -207,21 +207,28 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/pad1"
+                        android:background="@drawable/pad2"
                         tools:ignore="SpeakableTextPresentCheck"
                         />
+
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/recommend"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="5dp"/>
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="추천"
+                            android:textStyle="bold"
+                            android:textSize="10dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
 
                         <ImageButton
-                            android:id="@+id/mark"
+                            android:id="@+id/mark1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="85dp"
@@ -239,7 +246,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="[라엘] 유기농 순면 커버"
+                        android:text="[이십구데이즈] 울트라슬림 대형"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -248,7 +255,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="14p / 7,400원"
+                        android:text="16p / 2,500원"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -275,12 +282,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/recommend"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="5dp"/>
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="best1"
+                            android:textStyle="bold"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
 
                         <ImageButton
-                            android:id="@+id/mark"
+                            android:id="@+id/mark2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="85dp"
@@ -333,7 +345,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/pad1"
+                        android:background="@drawable/pad3"
                         tools:ignore="SpeakableTextPresentCheck"
                         />
                     <LinearLayout
@@ -342,12 +354,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/recommend"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="5dp"/>
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="best2"
+                            android:textStyle="bold"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
 
                         <ImageButton
-                            android:id="@+id/mark"
+                            android:id="@+id/mark3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="85dp"
@@ -365,7 +382,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="[라엘] 유기농 순면 커버"
+                        android:text="[예지미인] 윤슬 진한 소형"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -374,7 +391,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="14p / 7,400원"
+                        android:text="16p / 3,440원"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -393,7 +410,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/pad1"
+                        android:background="@drawable/pad4"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <LinearLayout
@@ -402,12 +419,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/recommend"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="5dp"/>
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="best3"
+                            android:textStyle="bold"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
 
                         <ImageButton
-                            android:id="@+id/mark"
+                            android:id="@+id/mark4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="85dp"
@@ -425,7 +447,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="[라엘] 유기농 순면 커버"
+                        android:text="[이십구데이즈] 울트라슬림 중형"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -434,7 +456,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="14p / 7,400원"
+                        android:text="16p / 3,540원"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -459,7 +481,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/pad1"
+                        android:background="@drawable/pad5"
                         tools:ignore="SpeakableTextPresentCheck"
                         />
                     <LinearLayout
@@ -468,12 +490,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/recommend"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="5dp"/>
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="best4"
+                            android:textStyle="bold"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
 
                         <ImageButton
-                            android:id="@+id/mark"
+                            android:id="@+id/mark5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="85dp"
@@ -491,7 +518,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="[라엘] 유기농 순면 커버"
+                        android:text="[템포] 내추럴순면 오버나이트"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -500,7 +527,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="14p / 7,400원"
+                        android:text="8p / 5,800원"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -519,7 +546,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/pad1"
+                        android:background="@drawable/pad6"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <LinearLayout
@@ -528,12 +555,17 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:background="@drawable/recommend"
                             android:layout_marginLeft="25dp"
-                            android:layout_marginTop="5dp"/>
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="best5"
+                            android:textStyle="bold"
+                            android:textSize="10dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
 
                         <ImageButton
-                            android:id="@+id/mark"
+                            android:id="@+id/mark6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="85dp"
@@ -551,7 +583,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="[라엘] 유기농 순면 커버"
+                        android:text="[유기농본] 제이본 팬티라이너 롱"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -560,7 +592,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="14p / 7,400원"
+                        android:text="28p / 3,400원"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -587,24 +619,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/pad1"
+                        android:background="@drawable/pad7"
                         tools:ignore="SpeakableTextPresentCheck"
                         />
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/recommend"
-                            android:layout_marginLeft="25dp"
-                            android:layout_marginTop="5dp"/>
+
 
                         <ImageButton
-                            android:id="@+id/mark"
+                            android:id="@+id/mark7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="85dp"
+                            android:layout_marginLeft="163.5dp"
                             android:layout_marginTop="5dp"
                             android:background="@drawable/mark" />
                     </LinearLayout>
@@ -619,7 +646,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="[라엘] 유기농 순면 커버"
+                        android:text="[좋은느낌] 입는 오버나이트"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -628,7 +655,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="14p / 7,400원"
+                        android:text="8p / 4,160원"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -647,24 +674,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="23dp"
-                        android:background="@drawable/pad1"
+                        android:background="@drawable/pad8"
                         tools:ignore="SpeakableTextPresentCheck" />
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/recommend"
-                            android:layout_marginLeft="25dp"
-                            android:layout_marginTop="5dp"/>
 
                         <ImageButton
                             android:id="@+id/mark"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="85dp"
+                            android:layout_marginLeft="163.5dp"
                             android:layout_marginTop="5dp"
                             android:background="@drawable/mark" />
                     </LinearLayout>
@@ -679,7 +700,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="[라엘] 유기농 순면 커버"
+                        android:text="[Oi] Organic Cotton Pads"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"
@@ -688,7 +709,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="14p / 7,400원"
+                        android:text="10p / 11,259원"
                         android:textStyle="bold"
                         android:layout_marginLeft="25dp"
                         android:layout_marginTop="2dp"

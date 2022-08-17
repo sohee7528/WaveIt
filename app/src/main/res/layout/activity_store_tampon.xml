@@ -163,6 +163,422 @@
 
                 </LinearLayout>
             </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/tampon2"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="추천"
+                            android:backgroundTint="@color/light_green"
+                            android:textStyle="bold"
+                            android:textSize="10dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+
+                        <ImageButton
+                            android:id="@+id/mark1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[이십구데이즈] 울트라슬림 대형"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16p / 2,500원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+
+                <!--첫 번째 줄-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <!--best1-->
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/tampon1"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="best1"
+                            android:backgroundTint="@color/light_green"
+                            android:textStyle="bold"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+
+                        <ImageButton
+                            android:id="@+id/mark2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[라엘] 유기농 순면 커버"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14p / 7,400원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <!--두 번째 줄-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+                <!--best2 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/tampon3"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="best2"
+                            android:backgroundTint="@color/light_green"
+                            android:textStyle="bold"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+
+                        <ImageButton
+                            android:id="@+id/mark3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[예지미인] 윤슬 진한 소형"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16p / 3,440원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+
+                <!--best3-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/tampon4"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="best3"
+                            android:backgroundTint="@color/light_green"
+                            android:textStyle="bold"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+
+                        <ImageButton
+                            android:id="@+id/mark4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[이십구데이즈] 울트라슬림 중형"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16p / 3,540원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--세 번째 줄-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
+                android:orientation="horizontal">
+                <!--best4 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/tampon5"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="best4"
+                            android:backgroundTint="@color/light_green"
+                            android:textStyle="bold"
+                            android:textSize="11dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+
+                        <ImageButton
+                            android:id="@+id/mark5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[템포] 내추럴순면 오버나이트"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8p / 5,800원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+
+                <!--best5-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/tampon6"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/rectangle66"
+                            android:text="best5"
+                            android:backgroundTint="@color/light_green"
+                            android:textStyle="bold"
+                            android:textSize="10dp"
+                            android:textAlignment="center"
+                            android:gravity="center"/>
+
+                        <ImageButton
+                            android:id="@+id/mark6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[유기농본] 제이본 팬티라이너 롱"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28p / 3,400원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--네 번째 줄-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -170,56 +586,115 @@
                 android:layout_marginTop="22dp"
                 android:orientation="horizontal">
 
-                <ImageButton
+                <!--그냥 제품 -->
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_recommend" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/tampon7"
+                        tools:ignore="SpeakableTextPresentCheck"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-                <ImageButton
+
+                        <ImageButton
+                            android:id="@+id/mark7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="163.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[좋은느낌] 입는 오버나이트"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8p / 4,160원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
+
+                <!--그냥 제품-->
+
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:background="@drawable/product_best1" />
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:background="@drawable/tampon8"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/mark"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="163.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/mark" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/rectangle65"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="[Oi] Organic Cotton Pads"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="12dp"
+                        android:textColor="@color/basic"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10p / 11,259원"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="2dp"
+                        android:textSize="11dp"
+                        android:textColor="@color/basic2"/>
+                </LinearLayout>
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="22dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best2" />
-
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:background="@drawable/product_best3" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="22dp"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="23dp"
-                    android:background="@drawable/product_best4" />
-
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
-                    android:background="@drawable/product_best5" />
-            </LinearLayout>
+            <!--끝-->
 
         </LinearLayout>
 

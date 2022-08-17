@@ -14,7 +14,8 @@ public class StoreMain extends AppCompatActivity {
 
     TextView btn_large;
     ImageButton tampon;
-    ImageButton mark;
+    ImageButton mark1;
+    ImageButton mark2;
 
     ImageButton whome;
     ImageButton wreal;
@@ -45,11 +46,19 @@ public class StoreMain extends AppCompatActivity {
             }
         });
 
-        mark = findViewById(R.id.mark);
-        mark.setOnClickListener(new View.OnClickListener() {
+        mark1 = findViewById(R.id.mark1);
+        mark1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mark.setImageResource(R.drawable.mark_fill);
+                mark1.setImageResource(R.drawable.mark_fill);
+            }
+        });
+
+        mark2 = findViewById(R.id.mark2);
+        mark2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mark2.setImageResource(R.drawable.mark_fill);
             }
         });
 
