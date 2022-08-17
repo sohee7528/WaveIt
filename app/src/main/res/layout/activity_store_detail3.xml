@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="360dp"
     android:gravity="top"
-    android:background="@drawable/detail2"
+    android:background="@drawable/detail3"
     android:orientation="vertical">
+
 </LinearLayout>
